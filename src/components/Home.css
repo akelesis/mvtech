@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+.body{
+    display: flex;
+    justify-content: center;
+}
+
+.home-title{
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.construction{
+    align-self: center;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.home-sub{
+    position: relative;
+    margin-bottom: 250px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
