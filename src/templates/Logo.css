@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+div.logo{
+    background-color: #444444;
+    padding: 50px 20px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.logo img{
+    width: 200px;
+    
+}
+
+.menu{
+    position: relative;
+    margin-top: 50px; 
+}
+
+.menu a{
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 20px;
+    
+}
+
+#budget-button{
+    color: #444;
+    background-color: #fff;
+    border: .5px solid #777;
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 5px 10px 10px 10px;
+    margin-left: 10px;
+}

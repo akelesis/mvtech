@@ -1,0 +1,24 @@
+footer .logo{
+    width: 100px;
+    line-height: 50px;
+    transform: translate(0, 10px);
+}
+
+footer.footer{
+    background-image: linear-gradient(to bottom, rgb(125,185,232),  rgb(41,137,165), rgb(30,87,153));
+    padding: 50px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    
+}
+
+footer span{
+    color: #fff;
+}
