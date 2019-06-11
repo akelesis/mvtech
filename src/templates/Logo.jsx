@@ -8,15 +8,12 @@ export default props =>
         <Link to="/" className="logo">
             <img src={logo} alt="Logo" />
         </Link>
-        {/*<nav className="menu">
+        <nav className="menu">
             <Link to="/">
                 Início
             </Link>
             <Link to="/services">
                 Serviços
-            </Link>
-            <Link to="/about-us">
-                Quem Somos
             </Link>
             <Link to="/contact-us">
                 Fale Conosco
@@ -24,6 +21,6 @@ export default props =>
             <Link to="/services" id="budget-button">
                 Solicite um Orçamento
             </Link>
-</nav>*/}
-        
+        </nav>
+
     </div>
