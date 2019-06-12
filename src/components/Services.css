@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+.service-list{
+    height: 100vh;
+    background-color: rgb(34,120,191);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3em;
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.service-card{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+.service-card:hover i,
+.service-card:hover .service-info-title,
+.service-card:hover{
+    background-color: rgb(34,120,191);
+    color: #fff;
+}
+
+.service-card i{
+    font-size: 5em;
+    text-align: center;
+    width: 100vw;
+    margin-top: 20px;
+    color: #444;
+}
+
+
+.service-info-title{
+    margin: 10px;
+    width: 100vw;
+    color: #444;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.service-info{
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.services-budget{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.services-budget h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3.3em;
+    width: 100vw;
+    align-self: center;
+    text-align: center;
+}
+
+.services-budget p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 100vw;
+    align-self: flex-start;
+    text-align: center;
+    font-size: 1.5em;
+}
+.services-budget small{
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 100vw;
+    align-self: flex-start;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+.services-budget a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(34,120,191);
+}
+
+.services-budget a:hover{
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(34,120,191);
+    color: rgb(34,120,191);
+}

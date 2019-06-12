@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Main from '../templates/Main'
 import '../components/Home.css'
 import Slider from 'react-animated-slider'
@@ -6,7 +7,8 @@ import 'react-animated-slider/build/horizontal.css'
 import './slider-animations.css';
 import './styles.css';
 import 'normalize.css/normalize.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import 'react-materialize'
+
 
 const content = [
     {
@@ -15,6 +17,7 @@ const content = [
             'Oferecemos vários produtos para facilitar a vida da sua empresa e otimizar seus resultados!',
         button: 'Conheça nossos produtos',
         image: 'https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        link: '/services'
     },
     {
         title: 'Queremos te ajudar!',
@@ -22,6 +25,7 @@ const content = [
             'Se ainda não sabe muito bem o que procura, entre em contato conosco! Será um prazer conversar com você e descobrir qual a melhor solução para a sua empresa! ',
         button: 'Fale conosco',
         image: 'https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        link: '/mail'
     },
     {
         title: 'Soluções Inteligentes',
@@ -29,9 +33,9 @@ const content = [
             'Estamos prontos para oferecer as melhores soluções para você e o seu negócio com alta qualidade e tecnologias de ponta',
         button: 'Faça um orçamento',
         image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        link: '/budget'
     }
 ]
-
 
 export default props =>
     <Main icon="home" className="body">
@@ -45,7 +49,7 @@ export default props =>
                     Com a utilização de boas práticas de desenvolvimento temos a segurança de que o seu sistema manterá a
                     capacidade de evoluir de acordo com a necessidade da sua empresa e dos seus negócios!
                 </p>
-                <small><a href="#">Clique aqui e conheça nossos serviços</a></small>
+                <small><Link to="/services">Clique aqui e conheça nossos serviços</Link></small>
             </div>
         </div>
         <div className="carousel">
@@ -58,8 +62,7 @@ export default props =>
                     >
                         <div className="inner">
                             <h1>{item.title}</h1>
-                            <p>{item.description}</p>
-                            <button>{item.button}</button>
+                            <p style={{ font: '50px' }}>{item.description}</p>
                         </div>
                     </div>
                 ))}
@@ -85,7 +88,7 @@ export default props =>
                 </div>
                 <div className="tech-text">
                     <p>
-                        Com motores como Node JS e Laravel o seu site tem o que existe de mais moderno em quesito de Backend. 
+                        Com motores como Node JS e Laravel o seu site tem o que existe de mais moderno em quesito de Backend.
                         Consultas em bancos de dados otimizadas e maior confiança quando se trata de segurança dos seus dados!
                     </p>
                 </div>

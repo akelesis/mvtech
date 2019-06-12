@@ -15,10 +15,10 @@ export default props =>
             <Link to="/services">
                 Serviços
             </Link>
-            <Link to="/contact-us">
+            <Link to="/mail">
                 Fale Conosco
             </Link>
-            <Link to="/services" id="budget-button">
+            <Link to="/budget" id="budget-button">
                 Solicite um Orçamento
             </Link>
         </nav>
