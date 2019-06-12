@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
 .contact-header{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -18,8 +18,61 @@
 
 .contact-header p{
     width: 100vw;
-    align-self: flex-end;
+    align-self: flex-start;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 3em;
+    font-size: 1.5em;
+}
+
+.form-contact{
+    background-color: #5574bb;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.text-input{
+    height: 40px;
+    width: 40vw;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em
+}
+
+.text-input-subject{
+    height: 40px;
+    width: 81.5vw;
+    justify-self: center;
+}
+
+.main-text-input{
+    width: 81.5vw;
+    margin: 10px;
+    justify-self: center;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5em
+}
+
+.contact-forwards{
+    background-color: #fff;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3em;
 }

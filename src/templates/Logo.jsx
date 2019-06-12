@@ -8,6 +8,24 @@ export default props =>
         <Link to="/" className="logo">
             <img src={logo} alt="Logo" />
         </Link>
+        <div className="dropdown">
+            <button className="menu-min">Menu <i class="fas fa-caret-down"></i></button>
+            <div className="dropdown-content">
+                <Link to="/">
+                    Início
+                </Link>
+                <Link to="/services">
+                    Serviços
+                </Link>
+                <Link to="/mail">
+                    Fale Conosco
+                </Link>
+                <Link to="/budget" id="budget-button">
+                    Solicite um Orçamento
+                </Link>
+            </div>
+        </div>
+
         <nav className="menu">
             <Link to="/">
                 Início

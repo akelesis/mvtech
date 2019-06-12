@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+.form-budget{
+    height: 100vh;
+    background-color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.select-budget{
+    width: 81.5vw;
+    height: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3em;
+    border: #fff;
+    border-radius: 5px;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.select-budget option{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: .8em;
+}
