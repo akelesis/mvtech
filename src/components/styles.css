@@ -211,12 +211,25 @@ button:hover {
 
 @media (max-height: 600px) {
   .slider-content .inner h1 {
-    font-size: 32px;
+    font-size: 20px;
   }    
 }
 
 @media (max-width: 640px) {
   .slider-content .inner h1 {
     font-size: 32px;
+  }
+}
+
+@media (max-width: 801px){
+  .slider-wrapper, .slide {
+    height: calc(60vh - 75px);
+  }
+
+  .slider-wrapper .inner h1{
+    font-size: 25px;
+  }
+  .slider-wrapper .inner p{
+    font-size: 15px;
   }
 }

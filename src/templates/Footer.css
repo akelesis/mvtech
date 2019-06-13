@@ -22,3 +22,12 @@ footer.footer{
 footer span{
     color: #fff;
 }
+
+@media(max-width: 801px){
+    footer.footer{
+        padding: 10px 0 10px 0;
+        height: 50px;
+        line-height: 20px;
+    }
+    
+}

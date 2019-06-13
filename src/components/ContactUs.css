@@ -37,6 +37,7 @@
 .input-group{
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -75,4 +76,16 @@
     margin: 10px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1.3em;
+}
+
+@media(max-width: 600px){
+    .text-input{
+        width: 81.5vw;
+    }
+}
+
+@media(max-height: 600px){
+    .form-contact{
+        height: 110vh;
+    }
 }

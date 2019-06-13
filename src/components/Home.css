@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 100px;
     align-items: center;
     height: 80vh;
 }
@@ -58,9 +57,9 @@ body{
     width: 80vw;
     height: 100vh;
     align-items: center;
-    grid-template-rows: 1fr 10px 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "about-title" "about-hr" "about-text";
+    grid-template-areas: "about-title""about-text";
 }
 
 .about-title{
@@ -71,13 +70,6 @@ body{
     text-align: center;
     justify-self: center;
     width: 100vw;
-}
-
-.about-hr{
-    grid-area: about-hr;
-    border: 0; 
-    height: 1px; 
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(143, 143, 143, 0.75), rgba(0, 0, 0, 0));
 }
 
 .about-text{
@@ -166,13 +158,18 @@ body{
 }
 
 @media screen and (max-width: 1010px){
+    .about-content{
+        width: 90vw;
+        height: 70vh;
+    }    
+
     .cards-tech{
         width: 80vw;
         height: 300px;
     }
 
     .tech{
-        height: 140vh;
+        height: 100vh;
     }
     .tech-title{
         font-size: 2em;
@@ -181,24 +178,24 @@ body{
 
 @media screen and (max-width: 801px){
     .home-header{
-        height: 50vh;
+        height: 40vh;
     }
 
     .home-title{
         font-size: 2em;
-        text-align: center;
+        align-self: flex-end;
         width: 80vw;
         margin-top: 30px;
-        color: #000;
-        font-family: 'Roboto Condensed', sans-serif;
-        justify-self: flex-start;
     }
     
     .home-sub{
         width: 80vw;
         font-size: 1.2em;
-        align-items: flex-start;
-        margin-bottom: 100px;
+        align-self: flex-start;
+    }
+
+    .about-content{
+        height: 50vh;
     }
 
     .cards-tech{
@@ -207,13 +204,13 @@ body{
     }
 
     .tech{
-        height: 100vh;
+        height: 60vh;
     }
 }
 
-@media(max-width: 667px){
+@media(max-width: 680px){
     .home-header{
-        height: 100vh;
+        height: 60vh;
     }
 
     .home-title{
@@ -226,9 +223,48 @@ body{
         margin-bottom: 100px;
     }
 
+    .about-content{
+        height: 55vh;
+    }
+
+    .about-content p{
+        font-size: 1.2em;
+    }
+
     .cards-tech{
         width: 80vw;
         height: 300px;
+    }
+
+    .tech{
+        height: 100vh;
+    }
+}
+
+@media(max-width: 400px){
+    .home-header{
+        height: 70vh;
+        align-content: flex-start;
+        
+    }
+
+    .home-title{
+        align-self: flex-start;
+    }
+
+    .cards-tech{
+        width: 90vw;
+        height: 350px;
+    }
+
+    .about-content{
+        align-items: start;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+
+    .about-text{
+        font-size: 1.2em;
     }
 
     .tech{
@@ -236,13 +272,20 @@ body{
     }
 }
 
-@media(max-width: 400px){
-    .cards-tech{
-        width: 90vw;
-        height: 350px;
+@media(max-height:600px){
+    .tech{
+        height: 180vh;
     }
 
-    .about-text{
-        font-size: 1.2em;
+    .about-content{
+        align-items: start;
+        height: 80vh;
+        margin-bottom: 20px;
+    }
+
+    .home-header{
+        height: 80vh;
+        align-content: flex-start;
+        
     }
 }

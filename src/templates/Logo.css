@@ -38,6 +38,11 @@ div.logo img{
     margin-left: 10px;
 }
 
+#budget-button:hover{
+    background-color: #222;
+    color: #fff;
+}
+
 .menu-min{
     display: none;
 }
@@ -54,11 +59,13 @@ div.logo img{
         display: block;
         border: #fff;
         margin-right: 50px;
-        background-color: #000;
-        height: 50px;
+        background-color: #222;
+        margin-top: 30px;
+        height: 30px;
+        width: 70px;
         color: #fff;
         font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .dropdown-content{
@@ -118,6 +125,6 @@ div.logo img{
     }
 
     .menu-min{
-        margin: 0;
+        margin: 30px 0 0 0;
     }
 }

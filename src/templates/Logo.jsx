@@ -9,7 +9,7 @@ export default props =>
             <img src={logo} alt="Logo" />
         </Link>
         <div className="dropdown">
-            <button className="menu-min">Menu <i class="fas fa-caret-down"></i></button>
+            <button className="menu-min"><i class="fas fa-ellipsis-h"></i></button>
             <div className="dropdown-content">
                 <Link to="/">
                     Início

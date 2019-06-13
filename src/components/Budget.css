@@ -24,3 +24,9 @@
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: .8em;
 }
+
+@media(max-height: 600px){
+    .form-budget{
+        height: 110vh;
+    }
+}
