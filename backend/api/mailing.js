@@ -2,13 +2,16 @@ const nodemail = require('nodemailer')
 
 module.exports = app =>{
     const contact = async (req, res) =>{
+        console.log('chegou aqui!!')
         const message = {...req.body}
 
         const transporter = nodemail.createTransport({
-            service: 'mail.mvtechsolutions.com ',
+            host: 'mail.mvtechsolutions.com',
+            port: 465,
+            secure: true,
             auth:{
                 user: 'clients@mvtechsolutions.com',
-                pass: 'mvtech2019solutions'
+                pass: ''
             }
         })
 
@@ -16,11 +19,12 @@ module.exports = app =>{
             from: `clients@mvtechsolutions.com`,
             to: 'marcus@mvtechsolutions.com',
             subject: `${message.subject}`,
-            text: `Mensagem enviada por ${message.name} <${message.email}>: ${message.text}`
+            text: `Mensagem enviada por ${message.name} <${message.email}>: ${message.main}`
         }
 
         await transporter.sendMail(mailOptions, function(err, info){
             if(err){
+                console.log('Erro ao enviar o email')
                 res.status(500).send()
             }
             else{
@@ -33,10 +37,12 @@ module.exports = app =>{
         const message = {...req.body}
 
         const transporter = nodemail.createTransport({
-            service: 'mail.mvtechsolutions.com ',
+            host: 'mail.mvtechsolutions.com',
+            port: 465,
+            secure: true,
             auth:{
                 user: 'quotes@mvtechsolutions.com',
-                pass: 'mvtech2019solutions'
+                pass: ''
             }
         })
 
@@ -47,12 +53,13 @@ module.exports = app =>{
             text: `
                 Mensagem enviada por ${message.name} <${message.email}>: 
                 ${message.area} - ${message.service} 
-                ${message.text}
+                ${message.main}
             `
         }
 
         await transporter.sendMail(mailOptions, function(err, info){
             if(err){
+                console.log('Erro ao enviar o email')
                 res.status(500).send()
             }
             else{
@@ -60,4 +67,6 @@ module.exports = app =>{
             }
         })
     }
+
+    return {contact, quote}
 }
