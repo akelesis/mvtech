@@ -11,7 +11,7 @@ module.exports = app =>{
             secure: true,
             auth:{
                 user: 'clients@mvtechsolutions.com',
-                pass: ''
+                pass: 'mvtech2019solutions'
             }
         })
 
@@ -42,7 +42,7 @@ module.exports = app =>{
             secure: true,
             auth:{
                 user: 'quotes@mvtechsolutions.com',
-                pass: ''
+                pass: 'mvtech2019solutions'
             }
         })
 
