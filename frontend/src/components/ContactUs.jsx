@@ -3,7 +3,7 @@ import Main from '../templates/Main'
 import './ContactUs.css'
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3001/contact'
+const baseUrl = 'https://mvtechsolutions.com/contact'
 
 const initialState = {
     message: {
@@ -28,7 +28,7 @@ export default class ContactUs extends Component {
         console.log(message)
         axios.post(url, message)
             .then(this.reset())
-            .then(alert('Mensagem enviada com sucesso!'))
+            .then(this.res)
     }
 
     updateField(event) {

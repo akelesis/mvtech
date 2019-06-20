@@ -2,7 +2,7 @@ const nodemail = require('nodemailer')
 
 module.exports = app =>{
     const contact = async (req, res) =>{
-        console.log('chegou aqui!!')
+        console.log('chegou aqui!')
         const message = {...req.body}
 
         const transporter = nodemail.createTransport({
@@ -63,7 +63,7 @@ module.exports = app =>{
                 res.status(500).send()
             }
             else{
-                res.status(204).send()
+                res.status(201).send('email enviado')
             }
         })
     }

@@ -1,5 +1,8 @@
-const app = require('express')()
+const express = require('express')
+const app = express()
 const consign = require('consign')
+
+const port = 4005
 
 consign()
 .then('./config/middlewares.js')
@@ -7,6 +10,6 @@ consign()
 .then('./config/routes.js')
 .into(app)
 
-app.listen(4000, () => {
-    console.log("Backend executando")
+app.listen(port, () => {
+    console.log(port)
 })

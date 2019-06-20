@@ -4,7 +4,7 @@ import axios from 'axios'
 import './Budget.css'
 
 
-const baseUrl = 'http://localhost:3001/quote'
+const baseUrl = 'http://mvtechsolutions.com/quote'
 
 const initialState = {
     message: {
