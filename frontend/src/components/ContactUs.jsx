@@ -3,7 +3,7 @@ import Main from '../templates/Main'
 import './ContactUs.css'
 import axios from 'axios'
 
-const baseUrl = 'https://mvtechsolutions.com/contact'
+const baseUrl = 'https://mvtechsolutions.com/backend/contact'
 
 const initialState = {
     message: {
@@ -28,7 +28,7 @@ export default class ContactUs extends Component {
         console.log(message)
         axios.post(url, message)
             .then(this.reset())
-            .then(this.res)
+            .then(alert('Mensagem enviada'))
     }
 
     updateField(event) {
@@ -50,7 +50,7 @@ export default class ContactUs extends Component {
                     </p>
                 </div>
                 <div className="form-contact">
-                    <form action="" method="post">
+                    <form action="" method="post" encType="application/x-www-form-urlencoded">
                         <div className="input-group">
                             <input type="text" className="text-input" id="name" name="name" placeholder="Diga-nos seu nome" onChange={e => this.updateField(e)}/>
                             <input type="email" className="text-input" id="email" name="email" placeholder="Insira seu email" onChange={e => this.updateField(e)}/>

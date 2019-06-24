@@ -28,6 +28,7 @@ module.exports = app =>{
                 res.status(500).send()
             }
             else{
+                console.log('Envio bem sucedido')
                 res.status(204).send()
             }
         })

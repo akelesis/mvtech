@@ -1,8 +1,7 @@
 const express = require('express')
 const app = express()
 const consign = require('consign')
-
-const port = 4005
+const port = 443
 
 consign()
 .then('./config/middlewares.js')
@@ -10,6 +9,7 @@ consign()
 .then('./config/routes.js')
 .into(app)
 
-app.listen(port, () => {
-    console.log(port)
+
+app.listen(port, function(req, res){
+    res.send('alive on' + port)
 })

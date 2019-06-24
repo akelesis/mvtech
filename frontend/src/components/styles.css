@@ -97,7 +97,7 @@ button:hover {
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 10;
-		background: url('http://www.sachsinsights.com/sites/all/themes/sachs/images/arrow_carousel_right.svg') no-repeat center center / 32px;
+		background: url('https://www.sachsinsights.com/sites/all/themes/sachs/images/arrow_carousel_right.svg') no-repeat center center / 32px;
 		width: 32px;
 		height: 32px;
 		text-indent: -9999px;
@@ -105,7 +105,7 @@ button:hover {
 }
 
 .previousButton:hover, .nextButton:hover {
-  background: url('http://www.sachsinsights.com/sites/all/themes/sachs/images/arrow_carousel_right.svg') no-repeat center center / 32px;
+  background: url('https://www.sachsinsights.com/sites/all/themes/sachs/images/arrow_carousel_right.svg') no-repeat center center / 32px;
 }
 
 .previousButton {
